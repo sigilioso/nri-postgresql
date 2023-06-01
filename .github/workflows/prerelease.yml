@@ -44,7 +44,7 @@ jobs:
         with:
           path: src/github.com/${{env.ORIGINAL_REPO_NAME}}
       - name: Install Go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v4
         with:
           go-version: ${{env.GO_VERSION}}
       - name: Running unit tests
@@ -65,7 +65,7 @@ jobs:
           fetch-depth: 1
           path: src/github.com/${{env.ORIGINAL_REPO_NAME}}
       - name: Install Go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v4
         with:
           go-version: ${{env.GO_VERSION}}
       - name: Integration test
